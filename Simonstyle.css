@@ -1,0 +1,180 @@
+*{
+    text-align: center;
+    background-color: #F3EEFF;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 5px solid #471d7f;
+    border-radius: 20px;
+    margin: 1rem;
+   transition: box-shadow 0.3s ease,opacity 0.3s ease;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: #FEB2B2;
+}
+.yellow{
+    background-color: #FBD38D;
+}
+.purple{
+    background-color: #90CDF4;
+}
+.green{
+    background-color: #81E6D9;
+}
+
+.flash{
+    background-color: white;
+}
+.userF{
+    background-color: rgba(255, 255, 255, 0.553);
+}
+h1{
+    color : #4B267D;
+    font-family: 'Poppins' , saans-serif;
+    font-weight: 700;
+    font-size: 3rem;    
+}
+h3{
+     color : #7B61A8;
+    font-family: 'Poppins' , saans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;  
+}
+
+.btn:hover {
+    
+    box-shadow: 0 5px 15px rgba(75, 38, 125, 0.25);
+    cursor: pointer;
+   
+}
+
+.btn:active{
+    box-shadow: 0 0 20px rgba(75, 38, 125, 0.25);
+    opacity: 0.7;
+}
+.game-over{
+    color : #9B2452;
+    fontfamily: 'Poppins' , saans-serif;
+    fontweight: 700;
+}
+
+#high-score{
+    color : #4B267D;
+    font-family: 'Poppins' , saans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;  
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        width:  min(38vw, 160px);
+        height: min(38vw, 160px);
+        margin: 5px;
+        border-radius: 20px;
+    }
+
+    #high-score {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+#sound-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background: linear-gradient(135deg, #4B267D, #7B61A8);
+    color: white;
+
+    border: 2px solid #4B267D;
+    border-radius: 25px;
+
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(75, 38, 125, 0.25);
+    transition: 0.3s ease;
+}
+
+#sound-btn:hover {
+    background: #7B61A8;
+    box-shadow: 0 0 15px rgba(75, 38, 125, 0.4);
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px auto;
+}
+
+.difficulty button {
+    background: #4B267D;
+    color: white;
+    border: 2px solid #4B267D;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.difficulty button:hover {
+    background: #7B61A8;
+    box-shadow: 0 0 12px rgba(75, 38, 125, 0.4);
+}
+.game-over {
+    color: #9B2452;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    animation: gameOverEffect 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes gameOverEffect {
+    from {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
