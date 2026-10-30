@@ -20,6 +20,8 @@ A fun and interactive memory game built using HTML, CSS, and JavaScript.
 
 Remember the colour sequence and repeat it in the correct order. Each level adds a new colour to the sequence.
 
-Author
+#Live Demo
+[Play Simon Says Game] https://melodic-cranachan-5e2a72.netlify.app/
 
+#Author
 Shreya Awadhiya
